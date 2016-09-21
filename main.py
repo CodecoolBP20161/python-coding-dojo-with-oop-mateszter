@@ -9,4 +9,15 @@ class Contact:
 
     @classmethod
     def reset_contacts(cls):
-        cls.all_contacts = []
+        return cls.all_contacts.clear()
+
+
+class Supplier(Contact):
+    all_orders = {}
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+    @classmethod
+    def order(cls, string):
+        pass
