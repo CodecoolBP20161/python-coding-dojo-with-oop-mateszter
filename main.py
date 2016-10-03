@@ -1,9 +1,10 @@
 class ContactList(list):
-    def search(self, input_contact):
-        contact_list = [i for i in self if input_contact in i.name]
+    pass
+    #def search(self, input_contact):
+    #    contact_list = [i for i in self if input_contact in i.name]
         #contact_list = filter(lambda x: x. == value, self)
 
-        return contact_list
+    #    return contact_list
 
 class Contact:
     all_contacts = ContactList()
